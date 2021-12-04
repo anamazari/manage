@@ -43,7 +43,7 @@
     width: 100%;
 
     background-color: var(--color-darkOrange);
-    background-image: url('/img/bg-simplify-section-mobile.svg');
+    background-image: url(../img/bg-simplify-section-mobile.svg);
     background-size: 100%;
     color:var(--color-white);
 }
