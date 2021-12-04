@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap');
+@import 'header.css';
+@import 'anchorsButtons.css';
+@import 'images.css';
+@import 'titles.css';
+@import 'paragraphs.css';
+@import 'boxes.css';
+@import 'footer.css';
+
+body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    
+    background-image: url('/img/bg-tablet-pattern.svg'), url('/img/bg-tablet-pattern.svg');
+    background-position: right -100px top -100px, left -100px center;
+    background-repeat: no-repeat;
+    background-size: 50%, 50%;
+
+    text-decoration: none;
+}
+
+/* --- Color Variables --- */
+
+:root {
+    --color-black: #000;
+    --color-darkBlue: #232C50;
+    --color-lightBlue:#364479;
+    --color-darkOrange: #F3603B;
+    --color-lightOrange: #f7a995;
+    --color-green: #0F690F;
+    --color-lightGreen: #7FF3A6;
+    --color-gray: #B3B2B7; 
+    --color-red: #FF0000;
+    --color-lightRed: #F37F7F;
+    --color-light: #FAFAFA;
+    --color-white: #FFF; 
+}
+

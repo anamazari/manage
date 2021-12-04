@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* ---------------------------------------- Mobile styles --------------------------------------- */
+
+/* --------------------------------------- Paragraphs styles ---------------------------------- */
+
+.paragraph,
+.statistics__paragraph,
+.info__paragraph:only-of-type {
+    margin-top: 30px;
+
+    color: var(--color-gray);
+    font-size: 1rem;
+    line-height: 24px;
+    
+}
+
+.paragraph,
+.statistics__paragraph {
+    text-align: center;
+}
+
+/* --- Paragraph styles for Fisrt Section --- */
+
+.statistics__paragraph {
+    margin-bottom: 30px;
+}
+
+/* --- Paragraph styles for Info Section --- */
+
+.info__paragraph {
+    text-align: justify;
+}
+
+/* ---------------------------------------- Desktop styles --------------------------------------- */
+
+@media screen and (min-width: 780px) {
+    .statistics__paragraph,
+    .info__paragraph {
+        color: var(--color-black);
+        text-align: justify;
+    }
+}

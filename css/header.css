@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ---------------------------------------- Mobile styles --------------------------------------- */
+
+/*--------------------------------------- Header styles ------------------------------------- */
+
+.mainHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.mainHeader__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+}
+
+.mainHeader__img {
+    height:20px;
+    width:100px;
+    padding-left: 20px;
+
+    object-fit: contain;
+}
+
+.mainHeader_barBtn {
+    padding-right: 20px;
+
+    color:var(--color-white);
+    font-size: 25px;
+    cursor: pointer;
+}
+
+
+.mainHeader__list {
+    position: fixed;
+    top: 100px;
+
+    width: 100%;
+    height: 0vh;
+
+    
+    background: rgba(245, 137, 110, 0.8) ;
+    list-style: none;
+    text-align: center;
+    transition: all 0.7s ease;  
+}
+
+.mainHeader__item {
+    display: none;
+    margin: 30px 0;
+    transition: all 0.7s ease;
+}
+
+.mainHeader__item > a {
+   position: relative;
+
+    color:var(--color-darkBlue);
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.5s;  
+}
+
+.mainHeader__item > a:hover {
+    color:var(--color-lightBlue);
+}
+
+.mainHeader__item > a:active {
+    color:var(--color-gray);
+}
+
+#check {
+    display: none;
+}
+
+#check:checked ~ .mainHeader__list {
+    height: 100vh;
+}
+
+#check:checked ~ .mainHeader__list li {
+    display: block;
+}
+
+/* --- Header Hover and Active --- */
+
+.mainHeader__item > a::after {
+    content:'';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    height: 2px;
+    width: 100%;
+
+    background: var(--color-darkOrange);
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.2s ease-in-out
+}
+
+.mainHeader__item > a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+    
+}
+
+.mainHeader__item > a:hover{
+    color: var(--color-darkOrange);
+}
+
+.mainHeader__item > a:active {
+    color: var(--color-gray);
+}
+
+/* ---------------------------------------- Desktop styles --------------------------------------- */
+
+@media screen and (min-width: 780px) { 
+
+    .mainHeader__nav {
+        height: 100px;
+    }
+
+    .mainHeader_barBtn img {
+        display: none;
+    }
+    .mainHeader__list {
+        position: relative;
+        top: 0;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        
+        background: none;
+        transition: none;
+    }
+
+    .mainHeader__list > li {
+        display: inline-block;
+        padding-right: 30px;
+
+        color: #242E52;
+        font-size: 0.8rem;
+        transition: none;
+    }
+
+    /* --- Animation styles for list --- */
+    .mainHeader__item > a {
+
+
+        animation: anchor 3s infinite;
+    }
+
+    @keyframes anchor {
+        25% { opacity: 25% }
+        50% { transform: translate(-20px); opacity: 100% } 
+        100% { opacity: 100% } 
+    }
+}
+

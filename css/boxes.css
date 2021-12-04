@@ -1,0 +1,180 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ---------------------------------------- Mobile styles --------------------------------------- */
+
+/* ---------------------------- Sections Styles ---------------------------- */
+
+/* ---- Styles for First Section and Info Section --- */
+
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+/* ---- Card Section --- */
+
+.card__section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* --- Background Section --- */
+
+.simpleSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+    padding: 20px;
+    height: 225px;
+    width: 100%;
+
+    background-color: var(--color-darkOrange);
+    background-image: url('/img/bg-simplify-section-mobile.svg');
+    background-size: 100%;
+    color:var(--color-white);
+}
+
+/* ----------------------------------------- Articles styles --------------------------------------*/
+
+/* --- First section --- */
+
+.statistics__article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+/* ------------------------------------------ Containers styles ------------------------------------ */
+
+/* --- Info Section ---*/
+
+.infoCard__container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 30px;
+
+    background-color: var(--color-lightOrange);
+    border-radius: 30px;
+}
+
+.infoCard__bulletContainer {
+    padding: 15px 20px;
+
+    background-color: var(--color-darkOrange);
+    border-radius: 30px;
+    color:var(--color-white);
+    font-size: 0.6rem;
+}
+
+/* --- Card Section --- */
+
+.card__container {
+    padding-top: 30px;
+}
+
+.card {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 20px;
+}
+
+.card__details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 20px 20px;
+
+    background-color:var(--color-light);
+}
+
+
+/* ------------------------------------------- Desktop styles ------------------------------------------- */
+
+@media screen and (min-width: 780px) {
+
+    /* ---- Section Styles for First Section and Info Section --- */
+
+    .section {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        padding: 40px;
+    }
+
+    .section:first-of-type {
+        flex-direction: row-reverse;
+    }
+
+    /* --- Articles Styles for First section --- */
+
+    .statistics__article {
+        height: auto;
+        width: 45%;
+        
+    }
+
+    /* --- Articles Styles for Info Section --- */
+
+    .info__details {
+        height: 45vh; 
+        width: 45%;
+         
+    }
+
+    .infoCard {
+        justify-content: space-between;
+        width: 40%;
+        
+    }
+
+    /* --- Divs Styles for Info Section --- */
+
+    .infoCard__container {
+        background-color: var(--color-white);
+    }
+
+    .infoCard__bulletContainer {
+        color: var(--color-white);
+        font-size: 1rem;
+    }
+
+    .infoCard__titleContainer {
+        padding-left: 20px;
+    }
+
+    /* --- Divs Styles for Card Section --- */
+
+    .card__container {
+        display: flex;
+    }
+
+    /* --- Section styles for Background Section --- */
+    
+    .simpleSection {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}

@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ---------------------------------------- Mobile styles --------------------------------------- */
+
+/* ------------------------------------------ Titles styles ------------------------------------- */
+
+.title__principal,
+.title__second,
+.title__secondWhite,
+.title__third,
+.infoCard__title:only-of-type {
+    color: var(--color-darkBlue);
+    font-weight: 700;
+}
+
+.title__principal,
+.title__second,
+.title__secondWhite,
+.title__third:only-of-type {
+    text-align: center;
+}
+
+.title__principal {
+    font-size: 2.5rem;
+}
+
+.title__second {
+    font-size: 1.8rem;
+}
+
+/* --- Background Section --- */
+
+.title__secondWhite:only-of-type {
+    padding-bottom: 30px;
+
+    color: var(--color-white);
+}
+
+.title__third,
+.infoCard__title {
+    font-size: 1rem;
+}
+
+/* --- Info Section --- */
+
+.infoCard__title {
+    text-align: start;
+}
+
+/* ---------------------------------------- Desktop styles --------------------------------------- */
+
+@media screen and (min-width: 780px) {
+
+    .title__principal,
+    .title__second:first-of-type {
+        text-align: start;
+    }
+}

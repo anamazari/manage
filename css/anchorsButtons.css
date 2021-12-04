@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ---------------------------------------- Mobile styles --------------------------------------- */
+
+/* -------------------------------------- Anchors buttons styles -------------------------------------*/
+
+.mainHeader__button,
+.button__start,
+.button__startWhite,
+.button__anchorGo { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 130px;
+    
+    background-color: var(--color-darkOrange);
+    border-radius: 50px;
+    border: none;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+    color: var(--color-white);
+    font-size: 1rem;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+/* --- Header --- */
+
+.mainHeader__button {
+    display: none;
+    margin-right: 20px;
+}
+
+/* --- Background Section --- */
+
+.button__startWhite {
+    background-color: var(--color-white);
+    color: var(--color-darkOrange);
+}
+
+/* ---  Footer --- */
+
+.button__anchorGo {
+    height: 40px;
+    width: 60px;
+}
+
+/* ---------------------------------------------------- Anchor Hover and Active -------------------------------------------- */
+
+/* --- Header --- */
+
+.mainHeader__button:hover {
+    background-color: var(--color-darkBlue);
+    transform: scale(1.2);
+}
+
+.mainHeader__button:active {
+    background-color: var(--color-lightOrange);
+
+}
+
+/* --- First Section and Card Section --- */
+
+.button__start:hover {
+    background-color:var(--color-darkBlue);
+    transform: scale(1.2);
+}
+
+.button__start:active {
+    background-color: var(--color-lightOrange);
+    box-shadow: 0px 4px 8px rgba(243, 96, 59, 0.5);
+}
+
+/* --- Background Section --- */
+
+.button__startWhite:hover {
+    background-color:var(--color-darkBlue);
+    transform: scale(1.2);
+}
+
+.button__startWhite:active {
+    background-color: var(--color-lightBlue);
+    box-shadow: 0px 4px 8px rgba(214, 214, 247, 0.5);
+}
+
+/* --- Footer --- */
+
+.button__anchorGo:hover {
+    background-color:var(--color-darkBlue);
+    transform: scale(1.2);
+}
+
+.button__anchorGo:active {
+    background-color: var(--color-lightOrange);
+    box-shadow: 0px 4px 8px rgba(243, 96, 59, 0.5);
+
+}
+
+/* ---------------------------------------------- Buttons -------------------------------------------- */
+
+.button,
+.button__white,
+.button__go {
+    background-color: inherit;
+    border: none;
+    color: var(--color-white);
+    outline: none;
+} 
+
+/* --- Background Section --- */
+
+.button__white {
+    color: var(--color-darkOrange);
+}
+
+/* ---------------------------------------------------- Buttons Hover y Active -------------------------------------------- */
+
+/* ---  Header, First Section and Card Section --- */
+
+.button:hover {
+    background-color:var(--color-darkBlue);
+}
+
+.button:active {
+    background-color: var(--color-lightOrange);
+}
+
+/* --- Background Section --- */
+
+.button__white:hover {
+    background-color:var(--color-darkBlue);
+}
+
+.button__white:active {
+    background-color:var(--color-lightBlue);
+}
+
+/*--- Footer --- */
+
+.button__anchorGo:hover {
+    background-color:var(--color-darkBlue);
+}
+
+.button__anchorGo:active {
+    background-color: var(--color-lightOrange);
+}
+
+/* ---------------------------------------- Desktop styles --------------------------------------- */
+
+@media screen and (min-width: 780px) {
+
+    /* --- Header --- */
+    .mainHeader__button {
+        display: flex;
+    }
+}
